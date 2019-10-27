@@ -20,6 +20,10 @@
     </div>
 
     <script id="recipe-template" type="text/x-handlebars-template">
+        {{#unless recipes}}
+        <p>Sorry, No recipes with this ingredient were found</p>
+        {{/unless}}
+
         {{#each recipes}}
         <div class = "recipe">
             <a href ={{href}} >{{title}}</a>

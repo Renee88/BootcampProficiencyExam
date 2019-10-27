@@ -36,7 +36,6 @@ body{
 }
 
 img:hover{
-    cursor: pointer;
     box-shadow: 5px 5px 5px #1E000E;
 }
 
@@ -53,6 +52,7 @@ img:hover{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
+    justify-content: center;
 }
 
 img{
@@ -67,7 +67,7 @@ img{
     background-color: #F4F7BE;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #1E000E;
-    margin:10px;
+    margin:7px;
     padding: 10px;
     grid-template-rows: 1fr 3fr 4fr;
     grid-template-areas: "t"
@@ -86,4 +86,14 @@ a{
     grid-area: t;
     font-family: 'Lobster', cursive;
     font-size: 22px;
+}
+
+p{
+    height: fit-content;
+    font-size: 20px;
+    width: 90vw;
+    color: white;
+    font-weight: bold;
+    font-family: 'ZCOOL XiaoWei', serif ;
+    text-align: center;
 }
