@@ -30,11 +30,13 @@ body{
 }  
 
 #search:hover{
+    cursor: pointer;
     background-color: #FFEDDF;
     box-shadow: 5px 5px 5px #1E000E;
 }
 
 img:hover{
+    cursor: pointer;
     box-shadow: 5px 5px 5px #1E000E;
 }
 
@@ -80,6 +82,7 @@ img{
 }
 
 a{
+    cursor: pointer;
     grid-area: t;
     font-family: 'Lobster', cursive;
     font-size: 22px;
