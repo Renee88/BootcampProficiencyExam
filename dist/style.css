@@ -41,7 +41,7 @@ img:hover{
 
 #main-container{
     display: grid;
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
     grid-template-rows: 1fr 10fr;
     grid-template-areas: "i"
@@ -51,7 +51,6 @@ img:hover{
     grid-area: rc;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
     justify-content: center;
 }
 
@@ -63,13 +62,13 @@ img{
 
 .recipe{
     display: grid;
-    width: calc(85vw/3);
+    width: calc(92vw/3);
     background-color: #F4F7BE;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #1E000E;
     margin:7px;
     padding: 10px;
-    grid-template-rows: 1fr 3fr 4fr;
+    grid-template-rows: 1fr 6fr 6fr;
     grid-template-areas: "t"
                         "img"
                         "ing";
@@ -82,6 +81,8 @@ img{
 }
 
 a{
+    display: grid;
+    justify-self: center;
     cursor: pointer;
     grid-area: t;
     font-family: 'Lobster', cursive;
