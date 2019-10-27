@@ -1,1 +1,38 @@
-#
+body{
+    margin: 0;
+}
+
+#main-container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: #823038;
+}
+#recipes-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+img{
+    display: grid;
+    width: calc(80vw/3);
+    align-self: center;
+}
+
+.recipe{
+    width: calc(85vw/3);
+    background-color: #F4F7BE;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #1E000E;
+    margin:10px;
+    padding: 10px;
+}
+
+.ingredients{
+    font-size: 20px;
+    font-family:
+}
+
+
+

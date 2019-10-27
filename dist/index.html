@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class = input>
-        <input type = "text" id="ingredient" placeholder="Choose an ingredient">
-        <button id = "search">Search!</button>
-    </div>
+    <div id="main-container">
+        <div class = input>
+            <input type = "text" id="ingredient" placeholder="Choose an ingredient">
+            <button id = "search">Search!</button>
+        </div>
+    
+        <div id = "recipes-container"></div>
 
-    <div id = "recipes-container"></div>
+    </div>
 
     <script id="recipe-template" type="text/x-handlebars-template">
         {{#each recipes}}
@@ -25,6 +28,7 @@
                 <li>{{this}}</li>
                 {{/each}}
             </ul>
+        </div>
         {{/each}}
     </script>
 
