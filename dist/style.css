@@ -1,38 +1,86 @@
 body{
     margin: 0;
+    background-color: #823038;
+}
+.input{
+    grid-area: i;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 5fr 1fr;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    width: 95vw;
+    justify-self: center;
+}
+
+#ingredient{
+    padding: 10px;
+    font-family:'ZCOOL XiaoWei', serif;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#search{
+    background-color: #DEBA6F;
+    padding: 5px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 20px;
+    border-radius: 5px;
+}  
+
+#search:hover{
+    background-color: #FFEDDF;
+    box-shadow: 5px 5px 5px #1E000E;
+}
+
+img:hover{
+    box-shadow: 5px 5px 5px #1E000E;
 }
 
 #main-container{
     display: grid;
     width: 100vw;
     height: 100vh;
-    background-color: #823038;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas: "i"
+                         "rc"
 }
 #recipes-container{
+    grid-area: rc;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
 }
 
 img{
-    display: grid;
+    grid-area: img;
     width: calc(80vw/3);
-    align-self: center;
+    justify-self: center;
 }
 
 .recipe{
+    display: grid;
     width: calc(85vw/3);
     background-color: #F4F7BE;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #1E000E;
     margin:10px;
     padding: 10px;
+    grid-template-rows: 1fr 3fr 4fr;
+    grid-template-areas: "t"
+                        "img"
+                        "ing";
 }
 
 .ingredients{
+    grid-area: ing;
     font-size: 20px;
-    font-family:
+    font-family: 'ZCOOL XiaoWei', serif;
 }
 
-
-
+a{
+    grid-area: t;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+}
